@@ -13,7 +13,7 @@ if (!(isset($_SESSION['user']))) {
 if (isset($_REQUEST['logout'])) {
 	unset($_SESSION['user']);
 	session_destroy();
-	header('location:suq.html');
+	header('location:index.html');
 }
 
 ?>
@@ -104,7 +104,7 @@ if (isset($_REQUEST['logout'])) {
             <div class="header_bottom">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
-                        <a class="navbar-brand" href="suq.html">
+                        <a class="navbar-brand" href="index.html">
                             <span>
                                 سوق الجامعة الهاشمية
                             </span>
@@ -117,7 +117,7 @@ if (isset($_REQUEST['logout'])) {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="suq.html">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html"> About</a>

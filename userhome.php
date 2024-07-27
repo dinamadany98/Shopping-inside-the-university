@@ -8,7 +8,7 @@ session_start();
 if (isset($_REQUEST['logout'])) {
 	unset($_SESSION['user']);
 	session_destroy();
-	header('location:suq.html');
+	header('location:index.html');
 }
 $stmt = "SELECT * FROM `product` ";
 
@@ -111,7 +111,7 @@ $rowuserphone=$stmtuser->fetch(PDO::FETCH_ASSOC);
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="suq.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> About</a>
